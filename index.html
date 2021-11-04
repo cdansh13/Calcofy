@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="https://images.unsplash.com/photo-1624466681600-591d08396866?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbGN1bGF0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        type="image/x-icon">
+    <title>Calcofy - Ansh Sharma</title>
+</head>
+<style>
+    #out::before {
+        content: "The Output: ";
+        font-size: 35px;
+        margin-left: 50px;
+    }
+
+    .cont {
+        height: 93vh;
+    }
+</style>
+<script src="index.js"></script>
+
+<body style=" overflow-y: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Calcofy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="" id="home">Home</a>
+                    </li>
+
+                    <a class="nav-link" onclick="about()" style="cursor:pointer;" id="about">About</a>
+
+
+                    <div class="form-check form-switch" style="margin-top: 10px;">
+                        <input class="form-check-input" type="checkbox" id="check" onclick="darkMode()" >
+                        <label class="form-check-label" for="flexSwitchCheckDefault" id="ch">Enable Dark Mode</label>
+                    </div>
+
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="cont" id="cont">
+        <h1 style="text-align:center;" id="heading"><u>Welcome to my Awesome Calculator</u></h1>
+
+        <div class="mb-3" style="margin-left: 50px; margin-right: 50px;">
+            <label for="exampleInputEmail1" class="form-label" id="Hnum1">First Number</label>
+            <input type="number" class="form-control" id="num1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3" style="margin-left: 50px; margin-right: 50px;">
+            <label for="exampleInputPassword1" class="form-label" id="Hnum2">Second Number</label>
+            <input type="number" class="form-control" id="num2">
+        </div>
+        <button type="submit" class="btn btn-outline-dark" style="margin-left: 50px;" id="btn1"
+            onclick="add()">Addition</button>
+        <button type="submit" class="btn btn-outline-dark" style="margin-left: 50px;" id="btn2"
+            onclick="sub()">Subtraction</button>
+        <button type="submit" class="btn btn-outline-dark" style="margin-left: 50px;" id="btn3"
+            onclick="mul()">Multiplication</button>
+        <button type="submit" class="btn btn-outline-dark" style="margin-left: 50px;" id="btn4"
+            onclick="div()">Division</button>
+        <p id="out" style="font-size: 35px; margin-top:30px;"></p>
+        <h1 id="ansh" style="font-size: 35px; margin-left:50px;">Developer: Ansh Sharma</h1>
+    </div>
+    <div class="cont" id="cont2" style="display: none;">
+        <h1 id="he1" style="margin-left: 50px; margin-right: 50px;">About us</h1>
+        <p id="content" style="margin-left: 50px; margin-right: 50px;">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Molestiae quas eligendi asperiores officia odio
+            animi, qui accusamus ipsa, quae eaque nisi. Eaque perspiciatis veritatis commodi deleniti porro doloremque
+            adipisci quasi sapiente eveniet. Corporis fuga magnam amet pariatur nesciunt rerum unde eaque ipsa. Tempore
+            ipsa iusto reprehenderit maxime eveniet suscipit explicabo eligendi quisquam, aliquam quasi neque
+            repellendus, illum repellat fugit, consequuntur reiciendis debitis quis corporis sint! Numquam incidunt
+            neque a esse similique, quaerat culpa molestiae, rerum provident nemo nihil dicta amet dolores. Unde,
+            ratione praesentium. Debitis ab sunt tempora soluta aut commodi quaerat excepturi necessitatibus sit est
+            blanditiis, reiciendis ullam magni delectus eaque et veritatis! Laborum perferendis ex ad exercitationem
+            recusandae! Facere in autem totam error sit. Consequuntur sed accusantium, amet debitis quasi minus?</p>
+    </div>
+</body>
+
+</html>
