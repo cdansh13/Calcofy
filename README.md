@@ -1,1 +1,1 @@
-This website is hosted on cdansh13.github.io/calcofy
+This website is hosted on https://cdansh13.github.io/Calcofy/
