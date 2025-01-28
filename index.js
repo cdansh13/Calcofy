@@ -9,6 +9,7 @@ function darkMode() {
     ansh.style.color = "white"
     let a = document.getElementById('cont');
     let a1 = document.getElementById('cont2');
+    let body = document.getElementById('body');
     let b = document.getElementById('dark');
     let c = document.getElementById('light');
     let d = document.getElementById('btn1').className = "btn btn-outline-light";
@@ -24,6 +25,7 @@ function darkMode() {
     let nav = document.getElementById('navbar').className = "navbar navbar-expand-lg navbar-dark bg-dark";
     a.style.backgroundColor = 'black';
     a1.style.backgroundColor = 'black';
+    body.style.backgroundColor = 'black';
     b.style.display = 'none';
     c.style.display = 'block';
     }
